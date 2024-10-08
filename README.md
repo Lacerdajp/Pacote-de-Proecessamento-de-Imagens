@@ -2,6 +2,8 @@
 # Pacote de Processamento de Imagens
 
 Criação de pacote de processamento de imagens em Python para o curso da DIO.
+este pacote foi criado apenas com o intuito  de aprendizado inicial.
+https://test.pypi.org/project/image-processing-jpls/
 
 ## Introdução
 
@@ -24,7 +26,7 @@ pip install -r requirements.txt
 A função `combine_images` combina duas imagens e retorna a diferença normalizada entre elas.
 
 ```python
-from image_processing.processing.combination import combine_images
+from image_processing_jpls.processing.combination import combine_images
 import numpy as np
 
 image1 = np.random.rand(100, 100, 3)
@@ -39,7 +41,7 @@ print(diff_image)
 A função `transfer_histogram` transfere o histograma de uma imagem para outra.
 
 ```python
-from image_processing.processing.combination import transfer_histogram
+from image_processing_jpls.processing.combination import transfer_histogram
 import numpy as np
 
 image1 = np.random.rand(100, 100, 3)
@@ -51,7 +53,7 @@ print(hist_transferred_image)
 ### Transformações de Imagem
 A função resize_image redimensiona uma imagem para as dimensões especificadas.
 ```python
-from image_processing.processing.transform import resize_image
+from image_processing_jpls.processing.transform import resize_image
 import numpy as np
 
 image = np.random.rand(100, 100, 3)
@@ -61,7 +63,7 @@ print(resized_image)
 ### Plotagem de Imagens
 A função plot_image exibe uma imagem usando matplotlib.
 ```python
-from image_processing.processing.plot import plot_image
+from image_processing_jpls.processing.plot import plot_image
 import numpy as np
 
 image = np.random.rand(100, 100, 3)

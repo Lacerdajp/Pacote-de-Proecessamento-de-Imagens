@@ -13,4 +13,5 @@ def combine_images(image1, image2):
     normalization_diff= (diff_image - np.min(diff_image))/(np.max(diff_image)-np.min(diff_image))
     return normalization_diff
 def transfer_histogram(image1, image2):
-    return match_hist(image1, image2, multichannel=True)
+    x=match_hist(image1, image2,channel_axis=-1)
+    return x
