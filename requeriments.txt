@@ -1,0 +1,4 @@
+matplotlib
+sckit-image
+numpy
+setuptools
